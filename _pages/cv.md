@@ -11,42 +11,38 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* M.Sc. in Computer Science, Minor in Mathematics, EPFL, 2026 - Current
+* B.Sc. in Computer Science, EPFL, 2022 - 2025
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Summer 2025: Research Intern
+  * Geneva University
+  * Studied properties of the ZX-calculus language for quantum computing from a complexity theory perspective
+  * Supervisors: Matteo De Francesco, Prof. Arnaud Casteigts
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2022-2026: Student Assistant at EPFL
+  * Advanced Information, Computation, Communication II, Theory of Computation, Stochastic Models in Communication
+  * Provided guidance to undergraduate students during exercise sessions, and participated in exam corrections
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Proficient in LateX, Git
+* Proficient in declarative, imperative, functional and object-oriented programming. Languages include:
+  * Python
+  * Scala
+  * C
+  * C++
+  * Java
+  * Kotlin
 
-Publications
+Projects
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+
+
 Talks
 ======
   <ul>{% for post in site.talks reversed %}
@@ -58,7 +54,3 @@ Teaching
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
