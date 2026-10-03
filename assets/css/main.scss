@@ -37,3 +37,25 @@
     "layout/sidebar",
     "layout/json_cv"
 ;
+
+/* Sticky footer: sits at the bottom on short pages, follows the content on long ones */
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh; /* avoids mobile address-bar over-scroll */
+  display: flex;
+  flex-direction: column;
+}
+
+.initial-content {
+  flex: 1 0 auto; /* grows to fill free space, pushing the footer down */
+}
+
+.page__footer {
+  flex-shrink: 0;
+  float: none;       /* the theme floats it left; not needed in a flex layout */
+  margin-top: 0;     /* the theme's 3em top margin can create extra scroll */
+}
