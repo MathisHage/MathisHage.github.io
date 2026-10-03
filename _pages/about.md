@@ -9,4 +9,4 @@ redirect_from:
 
 About Me
 ========
-I am a masters student in Computer Science at [EPFL](https://www.epfl.ch/fr/), Switzerland. Passionate about almost any theoretical subject, I intend in particular to continue my studies in the domains of computational complexity and mathematical logic. I hope to be able to pursue a career in research.
+I am a masters student in Computer Science at [EPFL](https://www.epfl.ch/), Switzerland. Passionate about almost any theoretical subject, I intend in particular to continue my studies in the domains of computational complexity and mathematical logic. I hope to be able to pursue a career in research.
