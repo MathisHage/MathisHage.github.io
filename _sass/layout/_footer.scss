@@ -39,6 +39,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
+    margin-bottom: 0;
+    flex-shrink: 0;
     max-width: 100%;
     padding: 0 1em 1em;
 
@@ -61,13 +63,5 @@ body {
   .far,
   .fal {
     color: var(--global-text-color-light);
-  }
-}
-
-/* You can likely delete this entirely now, as Flexbox doesn't "pin" the footer natively anyway */
-@media screen and (max-width: 768px) {
-  .page__footer {
-    position: relative;
-    bottom: auto;
   }
 }
