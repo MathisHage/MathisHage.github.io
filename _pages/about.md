@@ -9,4 +9,14 @@ redirect_from:
 
 About Me
 ========
-I am a masters student in Computer Science at [EPFL](https://www.epfl.ch/), Switzerland. Passionate about almost any theoretical subject, I intend in particular to continue my studies in the domains of computational complexity and mathematical logic. I hope to be able to pursue a career in research.
+I am a masters student in Computer Science at [EPFL](https://www.epfl.ch/), Switzerland. I am interested in about any subjects at the border between theoretical computer science and mathematics, such as optimization, computational complexity, or mathematical logic.
+
+Selected Work
+=============
+
+Here are a few of my past projects / experiences :
+
+{% include base_path %}
+
+{% assign post = site.portfolio | where: "Networks Out of Control (COM-512)", "Research Paper Analysis" | first %}
+{% include archive-single.html %}
