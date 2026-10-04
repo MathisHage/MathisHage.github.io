@@ -16,7 +16,7 @@ Selected Work
 
 Here are a few of my past projects / experiences :
 
-{% include base_path %}
 
+{% include base_path %}
 {% assign post = site.portfolio | where: "path", "_portfolio/nooc.md" | first %}
 {% include archive-single.html %}
