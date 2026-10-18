@@ -1,0 +1,16 @@
+---
+layout: archive
+title: "Recherche & Projets"
+permalink: /fr/projects/
+lang: fr
+en_url: /projects/
+author_profile: true
+---
+
+{% include base_path %}
+
+
+{% assign sorted_posts = site.portfolio | sort: "date" | reverse %}
+{% for post in sorted_posts %}
+  {% include archive-single.html %}
+{% endfor %}

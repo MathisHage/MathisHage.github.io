@@ -129,9 +129,14 @@
     color: var(--global-text-color-light);
   }
 
+  .page__date {
+    font-size: $type-size-5;
+  }
+
   .archive__item-excerpt {
     margin-top: 0.4em;
     margin-bottom: 0;
+    font-size: $type-size-5;
     line-height: 1.6;
   }
 }

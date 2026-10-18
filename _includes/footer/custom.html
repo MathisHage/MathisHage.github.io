@@ -1,3 +1,74 @@
 <!-- start custom footer snippets -->
+<script>
+(function() {
+  var pageLang = "{{ page.lang }}";
+  var collection = "{{ page.collection }}";
+  var basePath = "{{ base_path }}";
 
+  if (pageLang === "fr") {
+    localStorage.setItem("site-lang", "fr");
+  } else if (collection !== "portfolio") {
+    localStorage.setItem("site-lang", "en");
+  } else {
+    function applyPortfolioLang(lang) {
+      var homeLink = document.getElementById("nav-home-link");
+      var navLinks = document.querySelectorAll(".nav-dynamic-link");
+      var toggleLink = document.getElementById("lang-toggle-link");
+      var bioText = document.getElementById("author-bio-text");
+
+      if (lang === "fr") {
+        if (homeLink) homeLink.href = basePath + "/fr/";
+        if (navLinks.length >= 1) {
+          navLinks[0].textContent = "Recherche & Projets";
+          navLinks[0].href = basePath + "/fr/projects/";
+        }
+        if (navLinks.length >= 2) {
+          navLinks[1].textContent = "CV";
+          navLinks[1].href = basePath + "/fr/cv/";
+        }
+        if (toggleLink) {
+          toggleLink.textContent = "EN";
+          toggleLink.title = "Switch to English";
+          toggleLink.href = "#";
+          toggleLink.onclick = function(e) {
+            e.preventDefault();
+            localStorage.setItem("site-lang", "en");
+            applyPortfolioLang("en");
+          };
+        }
+        if (bioText) {
+          bioText.textContent = "Étudiant en Master d'Informatique @ EPFL.";
+        }
+      } else {
+        if (homeLink) homeLink.href = basePath + "/";
+        if (navLinks.length >= 1) {
+          navLinks[0].textContent = "Research & Projects";
+          navLinks[0].href = basePath + "/projects/";
+        }
+        if (navLinks.length >= 2) {
+          navLinks[1].textContent = "CV";
+          navLinks[1].href = basePath + "/cv/";
+        }
+        if (toggleLink) {
+          toggleLink.textContent = "FR";
+          toggleLink.title = "Passer en français";
+          toggleLink.href = "#";
+          toggleLink.onclick = function(e) {
+            e.preventDefault();
+            localStorage.setItem("site-lang", "fr");
+            applyPortfolioLang("fr");
+          };
+        }
+        if (bioText) {
+          bioText.textContent = "M.Sc. Student in Computer Science @ EPFL.";
+        }
+      }
+    }
+
+    var savedLang = localStorage.getItem("site-lang") || "en";
+    applyPortfolioLang(savedLang);
+  }
+})();
+</script>
 <!-- end custom footer snippets -->
+

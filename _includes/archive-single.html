@@ -6,10 +6,22 @@
   {% assign teaser = site.teaser %}
 {% endif %}
 
-{% if post.id %}
-  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% if page.lang == 'fr' and post.title_fr %}
+  {% assign raw_title = post.title_fr %}
 {% else %}
-  {% assign title = post.title %}
+  {% assign raw_title = post.title %}
+{% endif %}
+
+{% if post.id %}
+  {% assign title = raw_title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = raw_title %}
+{% endif %}
+
+{% if page.lang == 'fr' and post.excerpt_fr %}
+  {% assign raw_excerpt = post.excerpt_fr %}
+{% else %}
+  {% assign raw_excerpt = post.excerpt %}
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
@@ -43,13 +55,32 @@
         {% elsif post.collection == 'publications' %}
           <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.date %}
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+          {% if page.lang == 'fr' %}
+            {% assign m = post.date | date: "%-m" %}
+            {% case m %}
+              {% when '1' %}{% assign month_fr = "janvier" %}
+              {% when '2' %}{% assign month_fr = "février" %}
+              {% when '3' %}{% assign month_fr = "mars" %}
+              {% when '4' %}{% assign month_fr = "avril" %}
+              {% when '5' %}{% assign month_fr = "mai" %}
+              {% when '6' %}{% assign month_fr = "juin" %}
+              {% when '7' %}{% assign month_fr = "juillet" %}
+              {% when '8' %}{% assign month_fr = "août" %}
+              {% when '9' %}{% assign month_fr = "septembre" %}
+              {% when '10' %}{% assign month_fr = "octobre" %}
+              {% when '11' %}{% assign month_fr = "novembre" %}
+              {% when '12' %}{% assign month_fr = "décembre" %}
+            {% endcase %}
+            <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Publié le :</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | date: "%-d" }} {{ month_fr }} {{ post.date | date: "%Y" }}</time></p>
+          {% else %}
+            <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+          {% endif %}
         {% endif %}
 
-    {% if post.excerpt and site.read_more != 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-    {% elsif post.excerpt and site.read_more == 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
+    {% if raw_excerpt and site.read_more != 'enabled' %}
+    <p class="archive__item-excerpt" itemprop="description">{{ raw_excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+    {% elsif raw_excerpt and site.read_more == 'enabled' %}
+    <p class="archive__item-excerpt" itemprop="description"><p>{{ raw_excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
     
     {% if post.citation and post.paperurl and post.slidesurl and post.bibtexurl %}

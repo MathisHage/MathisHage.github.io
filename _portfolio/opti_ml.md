@@ -1,8 +1,11 @@
 ---
 title: "Optimization for ML (CS-439) : Quantization on Q-learning"
+title_fr: "Optimization for ML (CS-439) : Quantification appliquée au Q-learning"
 excerpt: "Measuring the effectiveness of quantization on SpeedyQ and vanilla Q-learning. <a href='https://github.com/MathisHage/opti_ml_project'>[GitHub]</a>"
+excerpt_fr: "Mesure de l'efficacité de la quantification sur SpeedyQ et le Q-learning classique. <a href='https://github.com/MathisHage/opti_ml_project'>[GitHub]</a>"
 collection: portfolio
 date: 2026-06-15
+fr_url: /fr/projects/
 ---
 
 # Measuring the effectiveness of quantization on SpeedyQ and vanilla Q-learning

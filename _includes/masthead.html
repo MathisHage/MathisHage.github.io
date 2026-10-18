@@ -5,19 +5,34 @@
       <nav id="site-nav" class="greedy-nav">
         <button><span class="navicon"></span></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg persist {% if page.url == '/' or page.url == '/index.html' %}selected{% endif %}">
-            <a href="{{ base_path }}/">{{ site.title }}</a>
-          </li>
-          {% for link in site.data.navigation.main %}
+          {% if page.lang == 'fr' %}
+            <li class="masthead__menu-item masthead__menu-item--lg persist {% if page.url == '/fr/' or page.url == '/fr/index.html' %}selected{% endif %}">
+              <a id="nav-home-link" href="{{ base_path }}/fr/">{{ site.title }}</a>
+            </li>
+            {% assign nav_links = site.data.navigation.main_fr %}
+          {% else %}
+            <li class="masthead__menu-item masthead__menu-item--lg persist {% if page.url == '/' or page.url == '/index.html' %}selected{% endif %}">
+              <a id="nav-home-link" href="{{ base_path }}/">{{ site.title }}</a>
+            </li>
+            {% assign nav_links = site.data.navigation.main %}
+          {% endif %}
+          {% for link in nav_links %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
             {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item {% if page.url contains link.url and link.url != '/' %}selected{% endif %}">
-              <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+            <li class="masthead__menu-item {% if page.url contains link.url and link.url != '/' and link.url != '/fr/' %}selected{% endif %}">
+              <a class="nav-dynamic-link" data-index="{{ forloop.index0 }}" href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
             </li>
           {% endfor %}
+          <li class="masthead__menu-item persist tail">
+            {% if page.lang == 'fr' %}
+              <a id="lang-toggle-link" href="{{ base_path }}{{ page.en_url | default: '/' }}" title="Switch to English" style="font-weight: 600;">EN</a>
+            {% else %}
+              <a id="lang-toggle-link" href="{{ base_path }}{{ page.fr_url | default: '/fr/' }}" title="Passer en français" style="font-weight: 600;">FR</a>
+            {% endif %}
+          </li>
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
           </li>
@@ -27,3 +42,4 @@
     </div>
   </div>
 </div>
+

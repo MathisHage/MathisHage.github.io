@@ -1,8 +1,11 @@
 ---
 title: "Principles of Digital Communication (COM-302) : Simple Encoder & Decoder"
-excerpt: "Implementation and analysis of an encoder / decoder over a channel with state. <a href='https://github.com/MathisHage/PDC'>[GitHub]</a>"
+title_fr: "Principles of Digital Communication (COM-302) : Encodeur & Décodeur simples"
+excerpt: "Implemented and studied the theoretical performances of a simple encoder / decoder. <a href='https://github.com/MathisHage/PDC'>[GitHub]</a>"
+excerpt_fr: "Implémentation et étude des performances théoriques d'un encodeur / décodeur simple. <a href='https://github.com/MathisHage/PDC'>[GitHub]</a>"
 collection: portfolio
 date: 2025-11-01
+fr_url: /fr/projects/
 ---
 
 **Course** : Principles of Digital Communication (COM-302), Fall 2025  

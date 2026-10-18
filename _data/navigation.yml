@@ -31,3 +31,11 @@ main:
     
   #- title: "Guide"
   #  url: /markdown/
+
+main_fr:
+  - title: "Recherche & Projets"
+    url: /fr/projects/
+
+  - title: "CV"
+    url: /fr/cv/
+

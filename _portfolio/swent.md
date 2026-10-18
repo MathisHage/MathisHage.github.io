@@ -1,8 +1,11 @@
 ---
 title: "Software Enterprise (CS-311) : Android App Development"
+title_fr: "Software Enterprise (CS-311) : Développement d'une application Android"
 excerpt: "Android application developed in a team, focusing on software engineering practices and optimized workflows."
+excerpt_fr: "Application Android développée en équipe, avec un accent mis sur les bonnes pratiques de génie logiciel et l'optimisation des flux de travail."
 collection: portfolio
 date: 2025-05-15
+fr_url: /fr/projects/
 ---
 
 **Course** : Software Enterprise (CS-311), 2024 – 2025  

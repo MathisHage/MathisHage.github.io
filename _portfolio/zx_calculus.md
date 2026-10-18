@@ -1,8 +1,11 @@
 ---
 title: "Research Internship : On the Hardness of Proving a ZX-Diagram Equality"
+title_fr: "Stage de recherche : Sur la difficulté de prouver l'égalité de deux diagrammes ZX"
 excerpt: "Investigated proof complexity and computational complexity questions about the ZX-calculus language for quantum computing. <a href='https://github.com/MathisHage/zx_calculus_internship'>[GitHub]</a>"
+excerpt_fr: "Étude de questions de complexité de preuve et de complexité algorithmique autour du langage ZX-calculus pour l'informatique quantique. <a href='https://github.com/MathisHage/zx_calculus_internship'>[GitHub]</a>"
 collection: portfolio
 date: 2026-08-15
+fr_url: /fr/projects/
 ---
 
 # On the Hardness of Proving a ZX-Diagram Equality
@@ -13,6 +16,14 @@ date: 2026-08-15
 **Repository** : [github.com/MathisHage/zx_calculus_internship](https://github.com/MathisHage/zx_calculus_internship)
 
 ---
+
+## The ZX-calculus language
+
+The ZX-calculus language is a graphical way to represent and reason about linear maps between qubits. It is similar to, but more expressive than, quantum circuits, in the sense that a ZX-diagram can represent *any* linear map between qubits (universality).
+
+It has a wide range of applications including in quantum circuit optimization (such as T-gate count reduction), circuit equivalence verification, quantum error correction, etc.
+
+Here is a [useful website](https://zxcalculus.com/) for more information.
 
 ## Abstract
 
