@@ -1,7 +1,8 @@
 ---
 title: "Networks Out of Control (COM-512)"
-excerpt: "Analysis of a theoretical research paper. <a href='https://github.com/MathisHage/nooc_project'>GitHub page</a>"
+excerpt: "Analysis and oral presentation of a theoretical paper on random graph theory. <a href='https://github.com/MathisHage/nooc_project'>[GitHub]</a>"
 collection: portfolio
+date: 2026-06-20
 ---
 
 ## Overview

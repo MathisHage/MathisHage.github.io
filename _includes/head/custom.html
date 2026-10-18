@@ -17,6 +17,43 @@
 <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-192x192.png" sizes="192x192"/>
 <link rel="manifest" href="{{ base_path }}/images/manifest.json"/>
 <link rel="icon" href="/images/favicon.ico"/>
-<meta name="theme-color" content="var(--global-bg-color)"/>
+<!-- Support for MathJax -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      macros: {
+        textsc: ['\\mathrm{#1}', 1]
+      }
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<!-- Sticky footer: flex layout so footer sits at bottom of content, not viewport -->
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--global-bg-color);
+  }
+  #main {
+    flex: 1 0 auto;
+    width: 100%;
+  }
+  .page__footer {
+    flex-shrink: 0;
+    margin-top: 0;
+    background-color: var(--global-bg-color);
+    border-top: 1px solid var(--global-border-color);
+  }
+</style>
 
 <!-- end custom head snippets -->
