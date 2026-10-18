@@ -16,7 +16,7 @@ I am a Master's student in Computer Science (with a Minor in Mathematics) at [EP
 
 I am currently looking for a semester project in a field broadly related to mathematical optimization.
 
-You can find my full [Curriculum Vitae here]({{ base_path }}/cv/) ([PDF]({{ base_path }}/files/cv.pdf)).
+You can find my full [CV here]({{ base_path }}/cv/) ([PDF]({{ base_path }}/files/cv.pdf)).
 
 Selected Work
 =============

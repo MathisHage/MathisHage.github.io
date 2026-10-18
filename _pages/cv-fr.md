@@ -21,6 +21,9 @@ author_profile: true
 * **M.Sc. en Informatique** *(Mineur en Mathématiques)* <span style="float: right; color: var(--global-text-color-light);">2026 – Présent</span>
 * **B.Sc. en Informatique** — Moyenne : 5.44 / 6.0 <span style="float: right; color: var(--global-text-color-light);">2022 – 2025</span>
 
+### Lycée Les Augustins
+* **Baccalauréat général** *(Spécialités Mathématiques & Physique-Chimie)* <span style="float: right; color: var(--global-text-color-light);">2022</span>
+
 ---
 
 ## Expérience

@@ -22,6 +22,9 @@ redirect_from:
 * **M.Sc. in Computer Science** *(Minor in Mathematics)* <span style="float: right; color: var(--global-text-color-light);">2026 – Present</span>
 * **B.Sc. in Computer Science** — GPA: 5.44 / 6.0 <span style="float: right; color: var(--global-text-color-light);">2022 – 2025</span>
 
+### Lycée Les Augustins
+* **French Baccalauréat** *(Mathematics & Physics specializations)* <span style="float: right; color: var(--global-text-color-light);">2022</span>
+
 ---
 
 ## Experience

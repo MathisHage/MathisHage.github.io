@@ -14,7 +14,7 @@ Je suis étudiant en Master d'Informatique (avec un Mineur en Mathématiques) à
 
 Je suis actuellement à la recherche d'un projet de semestre dans un domaine lié au sens large à l'optimisation mathématique.
 
-Vous pouvez consulter mon [Curriculum Vitae complet ici]({{ base_path }}/fr/cv/) ([PDF]({{ base_path }}/files/cv.pdf)).
+Vous pouvez consulter mon [CV complet ici]({{ base_path }}/fr/cv/) ([PDF]({{ base_path }}/files/cv.pdf)).
 
 Travaux sélectionnés
 ====================
@@ -35,7 +35,7 @@ Voici quelques-uns de mes projets et expériences passés :
 Enseignement
 ============
 
-J'ai travaillé comme assistant-étudiant à l'EPFL, encadrant les étudiants de Bachelor lors des séances d'exercices et participant aux corrections :
+J'ai travaillé comme assistant-étudiant à l'EPFL, où j'ai encadré des étudiants de Bachelor lors des séances d'exercices et participé aux corrections :
 * **Modèles Stochastiques pour les Communications** — Automne 2026 ;
 * **Theory of Computation** — Printemps 2026 ;
 * **Advanced Information, Computation and Communication II** — Printemps 2024.
