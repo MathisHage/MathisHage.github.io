@@ -17,25 +17,23 @@ fr_url: /fr/projects/
 
 ---
 
-## The ZX-calculus language
+## Context
 
-The ZX-calculus language is a graphical way to represent and reason about linear maps between qubits. It is similar to, but more expressive than, quantum circuits, in the sense that a ZX-diagram can represent *any* linear map between qubits (universality).
+The ZX-calculus language is a graphical way to represent and reason about linear maps between qubits. It is similar to, but more expressive than, quantum circuits, in the sense that a ZX-diagram can represent any linear map between qubits (universality). It has a wide range of applications including in quantum circuit optimization (such as T-gate count reduction), circuit equivalence verification, quantum error correction, etc. Here is a [useful website](https://zxcalculus.com/) for more information.
 
-It has a wide range of applications including in quantum circuit optimization (such as T-gate count reduction), circuit equivalence verification, quantum error correction, etc.
-
-Here is a [useful website](https://zxcalculus.com/) for more information.
-
-## Abstract
-
-After several years of studies, the ZX-calculus language for diagrammatic reasoning on qubits has finally seen emergence of rulesets ensuring completeness for all sorts of fragments of quantum mechanics. Even though we therefore know that we can always prove or disprove an equality between two ZX-diagrams using only the rules of ZX-calculus, an interesting question could be to ask what is the number of rules necessary to do so. This paper exhibits the difficulty of this question, lying mostly in proof complexity theory. Despite this, after some work to prove NP-membership, I still present serious arguments for NP-hardness of the problem when constrained to rational phases. An extension is then made to the real phases case in the context of the Blum-Shub-Smale Model, before ending by a hypothesis regarding the difficulty of the problem constrained to the Clifford fragment.
+After several years of studies, the ZX-calculus has finally seen emergence of rulesets ensuring completeness for all sorts of fragments of quantum mechanics. Even though we therefore know that we can always prove or disprove an equality between two ZX-diagrams using only the rules of ZX-calculus, an interesting question could be to ask what is the number of rules necessary to do so. My work exhibits the difficulty of this question, lying mostly in proof complexity theory.
 
 ## The Problem
 
-In this case study, we look at another aspect of the ZX-Calculus. We know that this language is *complete* : this means that two diagrams are equal if and only if there is a sequence of rules (allowed by the language) transforming one diagram into the other. Therefore it is always possible to go from one diagram to another if they represent the same linear map on qubits. An interesting question can now be asked : what is the *number of steps* needed to prove an equality between two diagrams ? More specifically, let the language :
+Since the ZX-calculus is *complete*, any two equivalent diagrams can always be transformed into one another using a sequence of rewrite rules. A natural question from proof complexity is then : *what is the number of steps needed to prove an equality between two diagrams ?*
 
-$$\textsc{ZX-REWRITE} := \{ (D_1, D_2, k) \; | \; D_1, D_2 \text{ are ZX-diagrams s.t. the equality } D_1=D_2 \text{ can be proven true in at most } k \text{ steps}\}.$$
+More specifically, we study the complexity class of the language :
 
-What is its complexity class ? This problem not only stems from ZX-calculus theory, but also from a general proof complexity setting.
+$$\textsc{ZX-REWRITE} := \{ (D_1, D_2, k) \; | \; D_1, D_2 \text{ are ZX-diagrams s.t. } D_1 = D_2 \text{ can be proven in at most } k \text{ steps}\}.$$
+
+## Results
+
+In this work, I prove that $\textsc{ZX-REWRITE}$ is in NP for rational phases by constructing an explicit polynomial-time verifier. I then introduce a reduction from $\textsc{SUBSET-SUM}$ showing that the problem is NP-hard when restricted to the spider fusion rule, and argue that this hardness extends to the general ruleset. Finally, for real phases, I discuss how an analogous reduction could be framed in the linear Blum-Shub-Smale (BSS) model to argue for $\text{NP}^=_{\text{lin}}$-hardness.
 
 ## Deliverables & Links
 * [Report (PDF)](https://github.com/MathisHage/zx_calculus_internship/blob/main/report/report.pdf)
