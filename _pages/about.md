@@ -12,7 +12,7 @@ redirect_from:
 
 About Me
 ========
-I am a Master's student in Computer Science (with a Minor in Mathematics) at [EPFL](https://www.epfl.ch/), Switzerland, where I also completed my B.Sc. in Computer Science. I am interested in about any subjects at the border between theoretical computer science and mathematics, such as optimization, computational complexity, or mathematical logic.
+I am a Master's student in Computer Science (with a minor in mathematics) at [EPFL](https://www.epfl.ch/), Switzerland, where I also completed my B.Sc. in Computer Science. I am broadly interested in topics at the intersection of theoretical computer science and mathematics, such as optimization, computational complexity, or mathematical logic.
 
 I am currently looking for a semester project in a field broadly related to mathematical optimization.
 
@@ -21,7 +21,7 @@ You can find my full [CV here]({{ base_path }}/cv/) ([PDF]({{ base_path }}/files
 Selected Work
 =============
 
-Here are a few of my past projects / experiences :
+Here are a few of my past projects / experiences:
 
 
 {% assign post = site.portfolio | where: "path", "_portfolio/zx_calculus.md" | first %}
@@ -38,8 +38,8 @@ Here are a few of my past projects / experiences :
 Teaching
 ========
 
-I have worked as a Student Assistant at EPFL, helping undergraduate students during exercise sessions and participating in grading :
-* **Stochastic Models in Communications** — Fall 2026 ;
-* **Theory of Computation** — Spring 2026 ;
+I have worked as a Student Assistant at EPFL, helping undergraduate students during exercise sessions and participating in grading:
+* **Stochastic Models in Communications** — Fall 2026;
+* **Theory of Computation** — Spring 2026;
 * **Advanced Information, Computation and Communication II** — Spring 2024.
 

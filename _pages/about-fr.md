@@ -10,7 +10,7 @@ author_profile: true
 
 À propos
 ========
-Je suis étudiant en Master d'Informatique (avec un Mineur en Mathématiques) à l'[EPFL](https://www.epfl.ch/), en Suisse, où j'ai également obtenu mon Bachelor en Informatique. Je m'intéresse à la plupart des sujets à la frontière entre l'informatique théorique et les mathématiques, tels que l'optimisation, la complexité algorithmique ou la logique mathématique.
+Je suis étudiant en Master d'informatique (avec un mineur en mathématiques) à l'[EPFL](https://www.epfl.ch/), en Suisse, où j'ai également obtenu mon Bachelor en informatique. Je m'intéresse à la plupart des sujets à la frontière entre l'informatique théorique et les mathématiques, tels que l'optimisation, la complexité algorithmique ou la logique mathématique.
 
 Je suis actuellement à la recherche d'un projet de semestre dans un domaine lié au sens large à l'optimisation mathématique.
 

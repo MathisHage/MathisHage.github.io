@@ -3,7 +3,7 @@
 (function() {
   var pageLang = "{{ page.lang }}";
   var collection = "{{ page.collection }}";
-  var basePath = "{{ base_path }}";
+  var basePath = "{{ site.baseurl }}";
 
   if (pageLang === "fr") {
     localStorage.setItem("site-lang", "fr");
@@ -37,7 +37,7 @@
           };
         }
         if (bioText) {
-          bioText.textContent = "Étudiant en Master d'Informatique @ EPFL.";
+          bioText.textContent = "Étudiant en Master d'informatique à l'EPFL.";
         }
       } else {
         if (homeLink) homeLink.href = basePath + "/";
@@ -65,6 +65,9 @@
       }
     }
 
+    if (document.referrer && document.referrer.indexOf("/fr/") !== -1) {
+      localStorage.setItem("site-lang", "fr");
+    }
     var savedLang = localStorage.getItem("site-lang") || "en";
     applyPortfolioLang(savedLang);
   }

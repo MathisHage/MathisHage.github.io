@@ -1,15 +1,17 @@
 ---
-title: "Software Enterprise (CS-311) : Android App Development"
+title: "Software Enterprise (CS-311): Android App Development"
 title_fr: "Software Enterprise (CS-311) : Développement d'une application Android"
 excerpt: "Android application developed in a team, focusing on software engineering practices and optimized workflows."
 excerpt_fr: "Application Android développée en équipe, avec un accent mis sur les bonnes pratiques de génie logiciel et l'optimisation des flux de travail."
 collection: portfolio
 date: 2025-05-15
 fr_url: /fr/projects/
+redirect_from:
+  - /portfolio/swent/
 ---
 
-**Course** : Software Enterprise (CS-311), 2024 – 2025  
-**Institution** : EPFL  
+**Course**: Software Enterprise (CS-311), 2024 – 2025  
+**Institution**: EPFL  
 
 ---
 
@@ -17,17 +19,17 @@ fr_url: /fr/projects/
 
 The aim of this project was to design and develop an Android application in a team over the course of the academic year, while learning and applying software engineering practices.
 
-The objectives were multiple :
-- Work in a team to design and develop an application ;
-- Learn and apply software engineering practices (project management, collaboration, development workflows) ;
+The objectives were multiple:
+- Work in a team to design and develop an application;
+- Learn and apply software engineering practices (project management, collaboration, development workflows);
 - Focus on optimizing development processes to deliver a high-quality product.
 
 ## Methodology & Practices
 
-During the project, we focused on establishing a solid development workflow :
-- **Team collaboration & project management** : Working in sprints, organizing tasks, and continuously tracking progress ;
-- **Development workflows & testing** : Applying continuous integration, writing unit and UI tests to maintain code quality and avoid regressions ;
-- **Code reviews** : Relying on Git workflows, pull requests, and peer reviews to optimize our development processes.
+During the project, we focused on establishing a solid development workflow:
+- **Team collaboration & project management**: Working in sprints, organizing tasks, and continuously tracking progress;
+- **Development workflows & testing**: Applying continuous integration, writing unit and UI tests to maintain code quality and avoid regressions;
+- **Code reviews**: Relying on Git workflows, pull requests, and peer reviews to optimize our development processes.
 
 ## Outcome
 

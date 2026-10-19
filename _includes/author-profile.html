@@ -18,7 +18,7 @@
     <h3 class="author__name">{{ author.name }}</h3>
     {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
     {% if page.lang == 'fr' %}
-      <p id="author-bio-text" class="author__bio">{{ author.bio_fr | default: "Étudiant en Master d'Informatique @ EPFL." }}</p>
+      <p id="author-bio-text" class="author__bio">{{ author.bio_fr | default: "Étudiant en Master d'informatique à l'EPFL." }}</p>
     {% elsif author.bio %}
       <p id="author-bio-text" class="author__bio">{{ author.bio }}</p>
     {% endif %}

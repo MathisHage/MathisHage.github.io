@@ -12,7 +12,7 @@ site_theme               : "mint" # The available themes options are "default", 
 title                    : "Mathis Hage"
 title_separator          : "-"
 name                     : &name "Mathis Hage"
-description              : &description "Welcome to my personal webpage."   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Personal website of Mathis Hage, M.Sc. student in Computer Science at EPFL."   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://mathishage.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -27,6 +27,7 @@ author:
   name             : "Mathis Hage"
   pronouns         : # example: "she/her"  
   bio              : "M.Sc. Student in Computer Science @ EPFL."
+  bio_fr           : "Étudiant en Master d'informatique à l'EPFL."
   location         : "Lausanne"
   employer         : "EPFL"
   uri              : # URL
@@ -143,7 +144,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
+og_image                 : "profile.png" # Social media default site image
 og_description           :  # Social media default site image description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
@@ -229,7 +230,7 @@ collections:
     permalink: /:collection/:path/
   portfolio:
     output: true
-    permalink: /:collection/:path/
+    permalink: /projects/:path/
   talks:
     output: true
     permalink: /:collection/:path/

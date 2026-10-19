@@ -1,19 +1,19 @@
 ---
-title: "Research Internship : On the Hardness of Proving a ZX-Diagram Equality"
+title: "Research Internship: On the Hardness of Proving a ZX-Diagram Equality"
 title_fr: "Stage de recherche : Sur la difficulté de prouver l'égalité de deux diagrammes ZX"
 excerpt: "Investigated proof complexity and computational complexity questions about the ZX-calculus language for quantum computing. <a href='https://github.com/MathisHage/zx_calculus_internship'>[GitHub]</a>"
 excerpt_fr: "Étude de questions de complexité de preuve et de complexité algorithmique autour du langage ZX-calculus pour l'informatique quantique. <a href='https://github.com/MathisHage/zx_calculus_internship'>[GitHub]</a>"
 collection: portfolio
 date: 2026-08-15
 fr_url: /fr/projects/
+redirect_from:
+  - /portfolio/zx_calculus/
 ---
 
-# On the Hardness of Proving a ZX-Diagram Equality
-
-**Role** : Research Intern, Summer 2026  
-**Lab / Institution** : ALGO Group, University of Geneva  
-**Author** : Mathis Hage  
-**Repository** : [github.com/MathisHage/zx_calculus_internship](https://github.com/MathisHage/zx_calculus_internship)
+**Role**: Research Intern, Summer 2026  
+**Lab / Institution**: ALGO Group, University of Geneva  
+**Author**: Mathis Hage  
+**Repository**: [github.com/MathisHage/zx_calculus_internship](https://github.com/MathisHage/zx_calculus_internship)
 
 ---
 
@@ -25,9 +25,9 @@ After several years of studies, the ZX-calculus has finally seen emergence of ru
 
 ## The Problem
 
-Since the ZX-calculus is *complete*, any two equivalent diagrams can always be transformed into one another using a sequence of rewrite rules. A natural question from proof complexity is then : *what is the number of steps needed to prove an equality between two diagrams ?*
+Since the ZX-calculus is *complete*, any two equivalent diagrams can always be transformed into one another using a sequence of rewrite rules. A natural question from proof complexity is then: *what is the number of steps needed to prove an equality between two diagrams?*
 
-More specifically, we study the complexity class of the language :
+More specifically, we study the complexity class of the language:
 
 $$\textsc{ZX-REWRITE} := \{ (D_1, D_2, k) \; | \; D_1, D_2 \text{ are ZX-diagrams s.t. } D_1 = D_2 \text{ can be proven in at most } k \text{ steps}\}.$$
 
